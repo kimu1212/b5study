@@ -31,6 +31,6 @@ public class B5studyApplicationTests {
     public void indexTest() throws Exception {
         mvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.message").value("Hello World!"));
+                .andExpect(jsonPath("$.message").value("hello, world"));
     }
 }
